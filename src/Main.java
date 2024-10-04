@@ -9,17 +9,19 @@ public class Main {
         HocSinh hs4 = new HocSinh("Duc", 21, "Nam");
         HocSinh hs5 = new HocSinh("Hung", 29, "Nam");
 
-        HocSinhMgr.getInstance().themHS(hs1);
-        HocSinhMgr.getInstance().themHS(hs2);
-        HocSinhMgr.getInstance().themHS(hs3);
-        HocSinhMgr.getInstance().themHS(hs4);
-        HocSinhMgr.getInstance().themHS(hs5);
+        HocSinhMgr hocSinhMgr = HocSinhMgr.getInstance();
+        hocSinhMgr.themHS(hs1);
+        hocSinhMgr.themHS(hs2);
+        hocSinhMgr.themHS(hs3);
+        hocSinhMgr.themHS(hs4);
+        hocSinhMgr.themHS(hs5);
 
-        HocSinhMgr.getInstance().inHS();
+        hocSinhMgr.inHS();
 
-        HocSinhMgr.getInstance().sapXepHSTuoiTD();
-        HocSinhMgr.getInstance().timHSNhieuTuoiNhat();
+        hocSinhMgr.sapXepHSTuoiTD();
+        hocSinhMgr.timHSNhieuTuoiNhat();
 
-        hs1.timKiemHSNu(HocSinhMgr.getInstance());
+        System.out.println();
+        hs1.timKiemHSNu(hocSinhMgr);
     }
 }

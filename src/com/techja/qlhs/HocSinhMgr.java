@@ -35,7 +35,7 @@ public class HocSinhMgr implements ITimKiem {
     }
 
     public void sapXepHSTuoiTD() {
-        System.out.println("Sap xep hs tuoi tang dan");
+        System.out.println("\nSap xep hs tuoi tang dan");
 
         Collections.sort(listHS, new Comparator<HocSinh>() {
             @Override
@@ -49,7 +49,7 @@ public class HocSinhMgr implements ITimKiem {
 
     public void timHSNhieuTuoiNhat() {
         if ( listHS.isEmpty() ) {
-            System.out.println("Chưa có danh sách học sinh");
+            System.out.println("\nChưa có danh sách học sinh");
 
             return;
         }
@@ -62,7 +62,7 @@ public class HocSinhMgr implements ITimKiem {
             }
         }
 
-        System.out.println("Hoc sinh nhieu tuoi nhat: " + hsNhieuTuoiNhat.toString());
+        System.out.println("\nHoc sinh nhieu tuoi nhat: " + hsNhieuTuoiNhat.toString());
     }
 
     @Override
